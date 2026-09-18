@@ -413,10 +413,13 @@ img {
 
 .bio-image {
 	position: relative;
+	width: fit-content;
+	max-width: 100%;
 }
 
 .image-placeholder {
-	aspect-ratio: 4/3;
+	width: fit-content;
+	max-width: 100%;
 	background: var(--dark-card);
 	border-radius: 8px;
 	display: flex;
@@ -425,7 +428,13 @@ img {
 	justify-content: center;
 	gap: var(--spacing-sm);
 	color: var(--light-muted);
-	border: 2px dashed rgba(255, 255, 255, 0.1);
+}
+
+.image-placeholder img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .image-placeholder svg {
